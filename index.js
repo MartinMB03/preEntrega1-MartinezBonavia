@@ -1,12 +1,12 @@
 // Funcion para generar un numero aleatorio entre 1 y 10
-function NumeroAleatorio(max) {
+function generarNumeroAleatorio(max) {
     return Math.floor(Math.random() * max) + 1;
 }
 
 // Funcion principal
 function simuladorAdivi() {
     const maxIntentos = 3;
-    const numeroSecreto = NumeroAleatorio(10);
+    const numeroSecreto = generarNumeroAleatorio(10);
     let intentos = 0;
     let adivinado = false;
 
